@@ -2,6 +2,12 @@
 
 A modern React application for managing employee data with a beautiful UI, animations, and complete CRUD operations.
 
+## Live Demo
+
+View the live application at: [https://employ-wise-task.vercel.app/]
+
+You can use the demo credentials below to log in.
+
 ## Features
 
 - User authentication with token-based login
@@ -30,8 +36,10 @@ A modern React application for managing employee data with a beautiful UI, anima
 1. **Clone the repository**
 
 
+    ```bash
    git clone https://github.com/SankalpBadoni/EmployWise-Task.git
    cd employwisetask
+   ```
 
 
 2. **Install dependencies**
