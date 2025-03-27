@@ -1,12 +1,90 @@
-# React + Vite
+# Employee Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for managing employee data with a beautiful UI, animations, and complete CRUD operations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication with token-based login
+- View and search employee data
+- Edit and delete employee information
+- Responsive design for mobile and desktop
+- Modern UI with animations
+- Pagination for large datasets
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- React Router for navigation
+- Framer Motion for animations
+- Lucide React for icons
+- Tailwind CSS for styling
+- ReqRes API for backend interactions
+
+## Demo Credentials
+
+- Email: `eve.holt@reqres.in`
+- Password: `cityslicka`
+
+## Setup and Installation
+
+1. **Clone the repository**
+
+
+   git clone https://github.com/SankalpBadoni/EmployWise-Task.git
+   cd employwisetask
+
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+
+   The application will be available at [http://localhost:5173](http://localhost:5173)
+
+## Project Structure
+
+```
+employwisetask/
+├── public/           # Static files
+├── src/              # Source files
+│   ├── components/   # Reusable components
+│   ├── pages/        # Page components
+│   │   ├── Login.jsx       # Login page
+│   │   └── UsersList.jsx   # Users management page
+│   ├── App.jsx       # Main application component
+│   └── main.jsx      # Entry point
+└── index.html        # HTML template
+```
+
+## API Endpoints
+
+This project uses the [ReqRes API](https://reqres.in/) for demonstration:
+
+- `POST /api/login` - User authentication
+- `GET /api/users?page={page_number}` - Fetch users with pagination
+- `PUT /api/users/{id}` - Update user data
+- `DELETE /api/users/{id}` - Delete user
+
+## Development Notes
+
+- The application uses a mock REST API provided by ReqRes
+- User authentication token is stored in localStorage
+- Edit and delete operations are simulated using the ReqRes API
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
